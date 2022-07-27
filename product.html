@@ -1,0 +1,222 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <link rel="stylesheet" href="product.css" />
+    <link
+      href="//maxcdn.bootstrapcdn.com/bootstrap/3.3.0/css/bootstrap.min.css"
+      rel="stylesheet"
+      id="bootstrap-css"
+    />
+    <script src="//maxcdn.bootstrapcdn.com/bootstrap/3.3.0/js/bootstrap.min.js"></script>
+    <script src="//code.jquery.com/jquery-1.11.1.min.js"></script>
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+    <title>Product Detail</title>
+    <link
+      href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css?family=Open+Sans:400,700"
+      rel="stylesheet"
+    />
+  </head>
+
+  <body>
+    <div class="container1">
+      <div class="navbar">
+        <a href="index.html"><img src="background2.png" class="logo" /></a>
+        <div class="nav">
+          <ul>
+            <li><a href="productlist.html">Products</a></li>
+            <li><a href="#">About</a></li>
+            <li><a href="index.html">Home</a></li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="container">
+        <div class="card">
+          <div class="container-fliud">
+            <div class="wrapper row">
+              <div class="preview col-md-6">
+                <div class="preview-pic tab-content">
+                  <div
+                    class="tab-pane active"
+                    id="pic-1"
+                    style="
+                      width: 600px;
+                      height: 600.038;
+                      justify-content: center;
+                      align-items: center;
+                      padding-left: 20px;
+                    "
+                  >
+                    <img
+                      id="image"
+                      src="mainlaptop.png"
+                      class="startucks"
+                      style="
+                        width: 400px;
+                        height: 400.038;
+                        justify-content: center;
+                        align-items: center;
+                        padding-left: 20px;
+                        margin-left: 70px;
+                      "
+                    />
+                    <video
+                      id="video"
+                      src="Asus ROG Strix G G731 Review_ Setting New Standards For Mid-Range Gaming Notebooks.mp4"
+                      width="580px"
+                      height="500px"
+                      style="margin-left: -13px; margin-top: -104px"
+                      class="startucks"
+                      controls
+                    ></video>
+                  </div>
+                  <div class="tab-pane" id="pic-2">
+                    <img
+                      id="image"
+                      src="81t7XNJjZ+L._SX679_-removebg-preview.png"
+                      class="startucks"
+                      style="
+                        width: 400px;
+                        height: 312.038;
+                        justify-content: center;
+                        align-items: center;
+                        padding-left: 20px;
+                      "
+                    />
+                  </div>
+                  <div class="tab-pane" id="pic-3">
+                    <img
+                      id="image"
+                      src="61cFJ3QkahL._SX679_-removebg-preview.png"
+                      class="startucks"
+                      style="
+                        width: 400px;
+                        height: 312.038;
+                        justify-content: center;padding-left: 20px
+                        align-items: center;
+                      "
+                    />
+                  </div>
+                  <div class="tab-pane" id="pic-4">
+                    <video
+                      class="startucks"
+                      src="Asus ROG Strix G G731 Review_ Setting New Standards For Mid-Range Gaming Notebooks.mp4"
+                    ></video>
+                  </div>
+                </div>
+                <ul class="preview-thumbnail nav nav-tabs">
+                  <li class="active">
+                    <a data-target="#pic-1" data-toggle="tab"
+                      ><img
+                        id=""
+                        src="mainlaptop.png"
+                        onclick="imgSlider('mainlaptop.png'),show2()"
+                        style="width: 400px"
+                    /></a>
+                  </li>
+                  <li>
+                    <a data-target="#pic-2" data-toggle="tab"
+                      ><img
+                        src="81t7XNJjZ+L._SX679_-removebg-preview.png"
+                        onclick="imgSlider('81t7XNJjZ+L._SX679_-removebg-preview.png'),show2()"
+                        style="width: 400px"
+                    /></a>
+                  </li>
+                  <li>
+                    <a data-target="#pic-3" data-toggle="tab"
+                      ><img
+                        src="61cFJ3QkahL._SX679_-removebg-preview.png"
+                        onclick="imgSlider('61cFJ3QkahL._SX679_-removebg-preview.png'),show2()"
+                        style="width: 400px"
+                    /></a>
+                  </li>
+                  <li>
+                    <a id="" data-target="#pic-4" data-toggle="tab"
+                      ><img
+                        src="71h0j0aiyIL._SX679_-removebg-preview.png"
+                        onclick="show(),imgSlider('71h0j0aiyIL._SX679_-removebg-preview.png')"
+                        id="btnID"
+                        style="width: 400px"
+                    /></a>
+                  </li>
+                </ul>
+              </div>
+              <div class="details col-md-6">
+                <h3 class="product-title">ASUS ROG STRIX G G731</h3>
+                <div class="rating">
+                  <div class="stars">
+                    <span class="fa fa-star checked"></span>
+                    <span class="fa fa-star checked"></span>
+                    <span class="fa fa-star checked"></span>
+                    <span class="fa fa-star checked"></span>
+                    <span class="fa fa-star checked"></span>
+                  </div>
+                  <span class="review-no">410 reviews</span>
+                </div>
+                <p class="product-description">
+                  Processor:9th Gen Intel Core i5-9300H Processor base speed
+                  2.4GHz (8M Cache, up to 4.1GHz, 4 Cores )<br />Memory &
+                  Storage: 8GB DDR4 2666MHz RAM upgradeable up to 32GB RAM with
+                  | Storage: 1TB 5400RPM 2.5’ SSHD (FireCuda) + PCIe NVMe 256GB
+                  M.2 SSD<br />Graphics: NVIDIA GeForce GTX 1650 GDDR5 4GB
+                  VRAM<br />16GB DDR4-2666 SO-DIMM x 2 Max Capacity: 32GB,<br />Display:
+                  17.3-inch Full HD (1920x1080) Anti Glare IPS-level panel,
+                  Refersh Rate 60Hz, 100% sRGB | 81.5% screen-to-body ratio
+                </p>
+                <h4 class="price">
+                  price:
+                  <span>₹ 1,18,992</span>
+                </h4>
+
+                <div class="action">
+                  <button class="btn" type="button">Buy now</button>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <script
+      type="text/javascript"
+      src="https://ajax.googleapis.com/ajax/libs/jquery/1.6.0/jquery.min.js"
+    ></script>
+    <script type="text/javascript">
+      $(function () {
+        $("#button").click(function () {
+          if (!$("#iframe").length) {
+            $("#iframeHolder").html(
+              '<iframe id="iframe" src="//player.vimeo.com/video/90429499" top="10px" left="10px" width="400" height="450"></iframe>'
+            );
+          }
+        });
+      });
+    </script>
+    <script type="text/javascript">
+      function imgSlider(anything) {
+        document.querySelector(".startucks").src = anything;
+      }
+    </script>
+    <script>
+      function show() {
+        /* Access image by id and change
+      the display property to block*/
+        document.getElementById("video").style.display = "block";
+        document.getElementById("image").style.display = "none";
+        document.getElementById("btnID").style.display = "block";
+      }
+      function show1() {
+        document.getElementById("image").style.display = "none";
+      }
+      function show2() {
+        document.getElementById("image").style.display = "block";
+        document.getElementById("video").style.display = "none";
+      }
+    </script>
+  </body>
+</html>

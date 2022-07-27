@@ -1,0 +1,267 @@
+body {
+  font-family: "open sans";
+  overflow-x: hidden;
+}
+
+img {
+  max-width: 100%;
+}
+#video {
+  display: none;
+}
+.preview {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -webkit-flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
+}
+@media screen and (max-width: 996px) {
+  .preview {
+    margin-bottom: 20px;
+  }
+}
+.btn {
+  color: #000;
+  font-weight: 500;
+  background-color: rgba(85, 85, 85, 0.63);
+}
+button:hover {
+  width: 100px;
+  background-color: red;
+}
+.preview-pic {
+  height: 400px;
+  -webkit-box-flex: 1;
+  -webkit-flex-grow: 1;
+  -ms-flex-positive: 1;
+  flex-grow: 1;
+}
+
+.preview-thumbnail.nav-tabs {
+  border: none;
+  margin-left: 100px;
+  margin-top: 15px;
+}
+.preview-thumbnail.nav-tabs li {
+  width: 18%;
+  margin-right: 2.5%;
+}
+.preview-thumbnail.nav-tabs li img {
+  max-width: 100%;
+  display: block;
+}
+.preview-thumbnail.nav-tabs li a {
+  padding: 0;
+  margin: 0;
+}
+.preview-thumbnail.nav-tabs li:last-of-type {
+  margin-right: 0;
+}
+
+.tab-content {
+  overflow: hidden;
+}
+.tab-content img {
+  width: 100%;
+  -webkit-animation-name: opacity;
+  animation-name: opacity;
+  -webkit-animation-duration: 0.3s;
+  animation-duration: 0.3s;
+}
+
+.card {
+  background: rgb(255, 255, 255);
+  padding-top: 3em;
+  padding-left: 3em;
+  padding-right: 3em;
+  line-height: 1.5em;
+  padding-bottom: 40px;
+}
+
+@media screen and (min-width: 997px) {
+  .wrapper {
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+  }
+}
+
+.details {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -webkit-flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
+}
+
+.colors {
+  -webkit-box-flex: 1;
+  -webkit-flex-grow: 1;
+  -ms-flex-positive: 1;
+  flex-grow: 1;
+}
+
+.product-title,
+.price,
+.sizes,
+.colors {
+  text-transform: UPPERCASE;
+  font-weight: bold;
+}
+
+.price span {
+  color: #000000;
+}
+.checked {
+  color: #ff9f1a;
+}
+.product-title,
+.rating,
+.product-description,
+.price,
+.vote,
+.sizes {
+  margin-bottom: 15px;
+}
+
+.product-title {
+  margin-top: 0;
+}
+
+.size {
+  margin-right: 10px;
+}
+.size:first-of-type {
+  margin-left: 40px;
+}
+
+.color {
+  display: inline-block;
+  vertical-align: middle;
+  margin-right: 10px;
+  height: 2em;
+  width: 2em;
+  border-radius: 2px;
+}
+.color:first-of-type {
+  margin-left: 20px;
+}
+
+.not-available {
+  text-align: center;
+  line-height: 2em;
+}
+.not-available:before {
+  font-family: fontawesome;
+  content: "\f00d";
+  color: #fff;
+}
+
+.tooltip-inner {
+  padding: 1.3em;
+}
+
+@-webkit-keyframes opacity {
+  0% {
+    opacity: 0;
+    -webkit-transform: scale(3);
+    transform: scale(3);
+  }
+  100% {
+    opacity: 1;
+    -webkit-transform: scale(1);
+    transform: scale(1);
+  }
+}
+
+@keyframes opacity {
+  0% {
+    opacity: 0;
+    -webkit-transform: scale(3);
+    transform: scale(3);
+  }
+  100% {
+    opacity: 1;
+    -webkit-transform: scale(1);
+    transform: scale(1);
+  }
+}
+
+@keyframes movedown {
+  0% {
+    transform: translateY(-100px);
+    visibility: visible;
+  }
+  100% {
+    transform: translateY(0);
+    visibility: visible;
+  }
+}
+.navbar img {
+  display: flex;
+  height: 100%;
+}
+.navbar {
+  background-color: #000;
+  width: 100%;
+  height: 10vh;
+  margin: auto;
+  display: flex;
+  align-items: center;
+  animation: movedown 1s linear 1;
+  visibility: hidden;
+  animation-fill-mode: forwards;
+  justify-content: space-between;
+}
+.nav ul {
+  padding-left: 436px;
+  padding-right: 10vw;
+  /* flex: 1;
+    padding-left: 40vw; */
+}
+.nav ul li {
+  display: inline-block;
+  list-style: none;
+  margin: 0px 20px;
+}
+.nav ul li a {
+  text-decoration: none;
+  color: rgb(255, 254, 254);
+}
+.logo {
+  width: 300px;
+  cursor: pointer;
+  animation: movedown 1s linear 1;
+  visibility: hidden;
+  animation-fill-mode: forwards;
+}
+.container1 {
+  height: 100vh;
+  width: 100%;
+  background-image: url(background2.jpg);
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+
+  box-sizing: border-box;
+  position: relative;
+  overflow: hidden;
+}
+.container {
+  width: 100vw !important;
+  height: auto !important;
+}
+.product-description {
+  font-weight: 300;
+  font-size: larger;
+}
